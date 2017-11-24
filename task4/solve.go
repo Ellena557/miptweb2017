@@ -27,7 +27,7 @@ func DifferentWordsCount(str string) int{
 	str2 := str + " ";
 	for _, symb := range str2{
 		if unicode.IsLetter(symb) {
-            		subst = subst + string(unicode.ToUpper(symb)) //Make all the letters big ones
+            		subst = subst + string(unicode.ToLower(symb)) //Make all the letters little ones
 		}
 		if subst != "" {
 			if !extr[subst] {
