@@ -23,16 +23,16 @@ func PowerGenerator(y int) func() int {
 func DifferentWordsCount(str string) int{
 	wrds := 0
 	subst := ""
-	dict := make(map[string]bool)
+	extr := make(map[string]bool)
 	for _, symb := range str{
 		if unicode.IsLetter(symb) {
             		subst = subst + string(unicode.ToUpper(symb)) //Make all the letters big ones
 		}
 		if subst != "" {
-			if !set[subst] {
+			if !extr[subst] {
                 		wrds = wrds + 1
 			}
-		set[subst] = true
+		extr[subst] = true
 		subst = ""
 		}
 	}
