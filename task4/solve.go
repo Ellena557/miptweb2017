@@ -12,7 +12,7 @@ func RemoveEven(arr[] int) []int{
         return result
 }
 
-func PowerGenerator(a int) func() int {
+func PowerGenerator(y int) func() int {
 	x := 1    
 	return func() int {        
 		x = x*y       
