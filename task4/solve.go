@@ -21,8 +21,8 @@ func PowerGenerator(y int) func() int {
 }
 
 func DifferentWordsCount(str string) int{
-	wrds = 0
-	subst = ""
+	wrds := 0
+	subst := ""
 	dict := make(map[string]bool)
 	for _, symb := range str{
 		if unicode.IsLetter(symb) {
