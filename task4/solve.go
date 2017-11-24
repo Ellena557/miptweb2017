@@ -5,7 +5,7 @@ import "unicode"
 func RemoveEven(arr[] int) []int{
 	result := make([]int, 0)
         for _, element := range arr {
-		if element %2 > 0 {
+		if element % 2 > 0 {
 			result = append(result, element)
 		}
         }
@@ -29,11 +29,11 @@ func DifferentWordsCount(str string) int{
             		subst = subst + string(unicode.ToUpper(symb)) //Make all the letters big ones
 		}
 		if subst != "" {
-			if !set[substr] {
+			if !set[subst] {
                 		wrds = wrds + 1
 			}
-		set[substr] = true
-		substr = ""
+		set[subst] = true
+		subst = ""
 		}
 	}
 	return wrds
