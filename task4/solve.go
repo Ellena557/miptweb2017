@@ -9,21 +9,15 @@ func RemoveEven(arr[] int) []int{
 			result = append(result, element)
 		}
         }
-        return result;
+        return result
 }
 
 func PowerGenerator(a int) func() int {
-    
-	x := 1
-    
-	return func() int {
-        
-		x = x*y
-        
-		return x
-    
+	x := 1    
+	return func() int {        
+		x = x*y       
+		return x    
 	}
-
 }
 
 func DifferentWordsCount(str string) int{
